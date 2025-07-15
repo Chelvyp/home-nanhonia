@@ -23,4 +23,4 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: ./ # pasta que queres enviar — usa ./ para enviar tudo
-          server-dir: / # pasta de destino no servidor — ajusta conforme tua estrutura
+          server-dir: /public_html/chelvy # pasta no servidor onde queres enviar
