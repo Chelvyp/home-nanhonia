@@ -477,3 +477,21 @@ form button:hover {
     padding: auto;
     border-radius: 8px;
 }
+
+/* lang switcher */
+
+.dropdown-menu {
+    min-width: 100px;
+}
+
+.dropdown-item li {
+    color: #304967;
+    font-weight: 500;
+    background: transparent !important;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(32, 145, 162, 0.1);
+    color: #304967;
+}

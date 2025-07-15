@@ -32,27 +32,48 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="home">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#home" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            <a class="nav-link" href="#home" data-i18n="home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#who-are-we">Quem somos</a>
+            <a class="nav-link" href="#who-are-we" data-i18n="who_are_we">Quem somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Serviços</a>
+            <a class="nav-link" href="#services" data-i18n="services">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contatos</a>
+            <a class="nav-link" href="#contact" data-i18n="contact">Contactos</a>
           </li>
         </ul>
       </div>
 
+
+      <!-- dropdown with option lang -->
+      <div class="dropdown">
+        <a class="btn dropdown-toggle me-2 rounded-5" type="button" id="lang-switcher" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="bi bi-globe2"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="lang-switcher">
+          <li><a class="dropdown-item" href="#" data-lang="pt">
+              <img src="./assets/img/flag/brazil-.png" alt="Português" class="me-2"
+                style="width: 20px; height: 20px;" />
+              Pt
+            </a></li>
+          <li><a class="dropdown-item" href="#" data-lang="en">
+              <img src="./assets/img/flag/united-states.png" alt="English" class="me-2"
+                style="width: 20px; height: 20px;" />
+              en
+            </a></li>
+        </ul>
+
+
+      </div>
       <div class="d-flex botao">
         <a href="https://construcao.nanhonia.com/" class="btn me-2 d-none d-lg-block text-white rounded-5 shadow-sm"
           target="_blank">Nanhonia CCE</a>
       </div>
-    </div>
   </nav>
 
 
@@ -67,8 +88,9 @@
     <!-- start who are we -->
     <section id="who-are-we" class="who-are-we">
       <div class="container" data-aos="fade-up">
-        <h2>Quem somos</h2>
-        <p>
+        <h2 data-i18n="who_are_we">Quem somos</h2>
+
+        <p class="text-justify" data-aos="fade-up" data-aos-delay="100" data-i18n="who_are_we_text">
           A Nanhonia Corporate Links é uma empresa 100% angolana,
           com todas as licenças necessárias para operar legalmente em
           seus setores de atuação, atendendo a todos os requisitos da
@@ -96,8 +118,8 @@
             <div class="card h-100 smission">
               <img class="card-img-top" src="./assets/img/missao.jpg" alt="Title" />
               <div class="card-body">
-                <h5 class="card-title">Missão</h5>
-                <p class="card-text">
+                <h5 class="card-title" data-i18n="mission_title">Missão</h5>
+                <p class="card-text" data-i18n="mission_text">
                   Oferecer soluções inovadoras que otimizem os processos
                   empresariais, promovam o desenvolvimento sustentável e
                   aumentem a competitividade dos nossos clientes.
@@ -109,8 +131,8 @@
             <div class="card h-100 smission">
               <img class="card-img-top" src="./assets/img/valores.jpg" alt="Title" />
               <div class="card-body">
-                <h5 class="card-title">Valores</h5>
-                <p class="card-text">
+                <h5 class="card-title" data-i18n="values_title">Valores</h5>
+                <p class="card-text" data-i18n="values_text">
                   Ser reconhecida como uma parceira estratégica de referência
                   no mercado corporativo, promovendo transformação e
                   excelência
@@ -122,11 +144,13 @@
             <div class="card h-100 smission">
               <img class="card-img-top" src="./assets/img/proposito.jpg" alt="Title" />
               <div class="card-body">
-                <h5 class="card-title">Propósito</h5>
-                <p class="card-text">
-                  Conectar organizações a soluções estratégicas que
-                  transformam desafios em oportunidades de crescimento.
+                <h5 class="card-title" data-i18n="purpose_title">Visão</h5>
+                <p class="card-text" data-i18n="purpose_text">
+                  Comprometemo-nos com a ética, a transparência e a
+                  responsabilidade social, contribuindo para o desenvolvimento
+                  sustentável e o bem-estar da sociedade.
                 </p>
+
               </div>
             </div>
           </div>
@@ -139,8 +163,8 @@
     <section id="services" class="services text-light py-5" data-aos="fade-up">
       <div class="container">
         <div class="text-center mb-5">
-          <h1 class="display-5 fw-bold">Nossos Serviços</h1>
-          <p class="lead">
+          <h1 class="display-5 fw-bold" data-i18n="services_title">Nossos Serviços</h1>
+          <p class="lead" data-i18n="services_subtitle">
             A Nanhonia oferece uma ampla gama de serviços para atender às
             necessidades específicas de cada cliente.
           </p>
@@ -153,8 +177,8 @@
             <div class="card bg-white text-dark border-0 shadow-sm h-100">
               <img src="./assets/img/Transporte de Carga.jpg" class="card-img-top" alt="Transporte de Carga" />
               <div class="card-body">
-                <h5 class="card-title">Transporte de Carga</h5>
-                <p class="card-text">
+                <h5 class="card-title" data-i18n="transport_title">Transporte de Carga</h5>
+                <p class="card-text" data-i18n="transport_text">
                   Soluções completas para transporte terrestre, aéreo e
                   marítimo de carga, garantindo segurança, agilidade e entrega
                   eficiente de seus produtos.
@@ -168,8 +192,8 @@
             <div class="card bg-white text-dark border-0 shadow-sm h-100">
               <img src="./assets/img/Desalfandegamento.jpg" class="card-img-top" alt="Desalfandegamento" />
               <div class="card-body">
-                <h5 class="card-title">Desalfandegamento</h5>
-                <p class="card-text">
+                <h5 class="card-title" data-i18n="customs_title">Desalfandegamento</h5>
+                <p class="card-text" data-i18n="customs_text">
                   Simplificamos o processo de desalfandegamento de cargas,
                   agilizando a burocracia e garantindo a fluidez do processo.
                 </p>
@@ -182,8 +206,8 @@
             <div class="card bg-white text-dark border-0 shadow-sm h-100">
               <img src="./assets/img/gestao.jpg" class="card-img-top" alt="Gestão Logística" />
               <div class="card-body">
-                <h5 class="card-title">Gestão de Cadeia de Compras</h5>
-                <p class="card-text">
+                <h5 class="card-title" data-i18n="supplychain_title">Gestão de Cadeia de Compras</h5>
+                <p class="card-text" data-i18n="supplychain_text">
                   Otimizamos os processos de compras para empresas de diversos
                   setores, incluindo a indústria petrolífera, garantindo o
                   fornecimento de produtos e serviços de alta qualidade.
@@ -198,27 +222,27 @@
     <section id="benefits" class="benefits-section">
       <div class="container" data-aos="fade-up">
         <div class="text-center mb-5">
-          <h1 class="display-5 fw-bold">Por que aderir os nossos serviços?</h1>
+          <h1 class="display-5 fw-bold" data-i18n="benefits_title">Por que aderir os nossos serviços?</h1>
 
           <hr class="mx-auto" style="width: 60px; border: 2px solid #2091a2" />
         </div>
         <div class="benefit-item" data-aos="fade-up">
           <div class="benefit-number">1</div>
-          <div class="benefit-text">
+          <div class="benefit-text" data-i18n="benefit1">
             Valorizamos a rapidez aliada à qualidade. Utilizamos metodologias ágeis e ferramentas tecnológicas para
             garantir processos eficientes e decisões assertivas.
           </div>
         </div>
         <div class="benefit-item" data-aos="fade-up">
           <div class="benefit-number">2</div>
-          <div class="benefit-text">
+          <div class="benefit-text" data-i18n="benefit2">
             Garantimos total conformidade com normas legais e regulatórias, especialmente em processos aduaneiros,
             transportes e de comércio internacional, minimizando riscos e assegurando tranquilidade operacional.
           </div>
         </div>
         <div class="benefit-item" data-aos="fade-up">
           <div class="benefit-number">3</div>
-          <div class="benefit-text">
+          <div class="benefit-text" data-i18n="benefit3">
             Contamos com profissionais altamente qualificados em áreas como transporte, desalfandegamento, compras,
             tecnologia e gestão empresarial.
           </div>
@@ -229,7 +253,7 @@
       <br />
       <div class="container">
         <div class="text-center mb-5">
-          <h1 class="display-5 fw-bold">
+          <h1 class="display-5 fw-bold" data-i18n="performance_title">
             Estratégias para aumento de desempenho
           </h1>
           <hr class="mx-auto" style="width: 60px; border: 2px solid #2091a2" />
@@ -242,7 +266,7 @@
                 </div>
                 <hr class="card-separator" />
                 <div class="card-content">
-                  <p>
+                  <p class="text-justify" data-i18n="performance1">
                     Planeamento logístico para redução de tempos de entrega e
                     consumo de combustível. Digitalização de documentos e
                     processos para redução de erros e aumento de agilidade.
@@ -257,7 +281,7 @@
                 </div>
                 <hr class="card-separator" />
                 <div class="card-content">
-                  <p>
+                  <p class="text-justify" data-i18n="performance2">
                     Implementação de plataformas
                     digitais para submissão e
                     acompanhamento de processos
@@ -276,7 +300,7 @@
                 </div>
                 <hr class="card-separator" />
                 <div class="card-content">
-                  <p>
+                  <p class="text-justify" data-i18n="performance3">
                     Redução de custos com
                     armazenagem e excesso de
                     stock, evitando rupturas.
@@ -291,8 +315,6 @@
     </section>
     <!-- end others -->
 
-
-
   </main>
   <!-- start contact -->
   <section id="contact" class="contactos">
@@ -303,35 +325,36 @@
           <div class="card bg-white border-dark border-1 shadow p-3 rounded-0" data-aos="fade-up"
             data-aos-duration="500" data-aos-delay="700">
             <div class="card-body">
-              <h2>Fale connosco</h2>
-              <p>
+              <h2 data-i18n="contact_title">Fale connosco</h2>
+              <p data-i18n="contact_text">
                 Entre em contato conosco para mais informações sobre nossos serviços e como podemos ajudar sua empresa a
                 crescer.
               </p>
               <form>
                 <div class="mb-3">
-                  <label for="name" class="form-label">Nome</label>
+                  <label for="name" class="form-label" data-i18n="form_name">Nome</label>
                   <input type="text" class="form-control" id="name" placeholder="Seu nome" required />
                 </div>
 
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
+                  <label for="email" class="form-label" data-i18n="form_email">E-mail</label>
                   <input type="email" class="form-control" id="email" placeholder="Seu email" required />
                 </div>
                 <!-- assunto -->
                 <div class="mb-3">
-                  <label for="subject" class="form-label">Assunto</label>
+                  <label for="subject" class="form-label" data-i18n="form_subject">Assunto</label>
                   <input type="text" class="form-control" id="subject" placeholder="Assunto" required />
                 </div>
 
                 <div class="mb-3">
-                  <label for="message" class="form-label">Mensagem</label>
+                  <label for="message" class="form-label" data-i18n="form_message">Mensagem</label>
                   <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem" required></textarea>
                 </div>
                 <div class="text-start">
 
                   <button type="submit" class="btn btn-lg"
-                    style="background: #304967; color: #fff; border: 1px solid #304967;">Enviar</button>
+                    style="background: #304967; color: #fff; border: 1px solid #304967;"
+                    data-i18n="form_send">Enviar</button>
                 </div>
               </form>
             </div>
@@ -355,7 +378,8 @@
           <h5 class="mb-3 fw-bold text-uppercase">NANHONIA</h5>
           <div class="map-container">
             <p>
-              <i class="bi bi-geo-alt-fill me-2"></i> Centralidade do Kilamba, Edf. F26, 5º Andar, Apt. nº 51
+              <i class="bi bi-geo-alt-fill me-2" data-i18n="address"></i> Centralidade do Kilamba, Edf. F26, 5º Andar,
+              Apt. nº 51
               Distrito Urbano do Kilamba, Luanda-Angola
             </p>
             <iframe
@@ -366,7 +390,7 @@
 
         <!-- Coluna 3: Redes Sociais e Parceiros -->
         <div class="col" style="margin-left: 3%;">
-          <h5 class="mb-3 fw-bold text-uppercase">Nossas Redes</h5>
+          <h5 class="mb-3 fw-bold text-uppercase" data-i18n="social_midia">Nossas Redes</h5>
           <p>
             <i class="bi bi-facebook me-2"></i>
             <a href="https://www.facebook.com/profile.php?id=61564964234438" target="_blank"
@@ -391,7 +415,7 @@
 
         <!-- Coluna 2: Contacto -->
         <div class="col">
-          <h5 class="mb-3 fw-bold text-uppercase">Outros Serviços</h5>
+          <h5 class="mb-3 fw-bold text-uppercase" data-i18n="other_service">Outros Serviços</h5>
           <p>
             <i class="bi bi-globe-americas me-2"></i>
             <a href="https://construcao.nanhonia.com/" target="_blank" class="text-light text-decoration-none"> NAHONIA
@@ -406,7 +430,7 @@
         </div>
 
         <div class="col">
-          <h5 class="mb-3 fw-bold text-uppercase">Contactos</h5>
+          <h5 class="mb-3 fw-bold text-uppercase" data-i18n="contact">Contactos</h5>
           <p>
             <i class="bi bi-telephone-fill me-2"></i>
             <a href="tel:+244923326161" class="text-light text-decoration-none"> +(244) 923 326 161</a>
@@ -427,7 +451,7 @@
       </div>
     </div>
 
-    <div class="text-center text-white py-3">
+    <div class="text-center text-white py-3" data-i18n="copyright">
       © 2025 Nanhonia Corporate Links, Lda. Todos os direitos reservados.
     </div>
   </footer>
@@ -464,6 +488,45 @@
         item.classList.remove("c-hover");
       });
     });
+
+
+
+  </script>
+
+  <script>
+    const langLinks = document.querySelectorAll('.dropdown-menu [data-lang]');
+    const langSwitcherBtn = document.getElementById('lang-switcher');
+
+    async function loadLanguage(lang) {
+      const res = await fetch(`./assets/lang/${lang}.json`);
+      const data = await res.json();
+      const elements = document.querySelectorAll("[data-i18n]");
+
+      elements.forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (data[key]) {
+          if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+            el.placeholder = data[key];
+          } else {
+            el.textContent = data[key];
+          }
+        }
+      });
+
+      localStorage.setItem("lang", lang);
+    }
+
+    langLinks.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const lang = link.getAttribute("data-lang");
+        loadLanguage(lang);
+      });
+    });
+
+    // Ao carregar a página
+    const storedLang = localStorage.getItem("lang") || "pt";
+    loadLanguage(storedLang);
   </script>
 </body>
 
