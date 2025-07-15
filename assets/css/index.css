@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+/* NAVBAR padrão — BRANCO */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid rgba(32, 145, 162, 0.3) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    position: fixed;
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    padding: 0 15px;
+}
+
+/* NAVBAR após scroll — efeito glass */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #304967;
+    text-decoration: none;
+    display: inline-block;
+
+    font-weight: 500;
+    font-size: 16px;
+
+
+}
+
+.navbar a img {
+    width: 200px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.navbar a:hover {
+    background-color: rgba(32, 145, 162, 0.1) !important;
+    color: #304967 !important;
+    border-radius: 5px;
+
+}
+
+/* .navbar a.active {
+    background-color: rgba(32, 145, 162, 0.2);
+    border-radius: 5px;
+} */
+.navbar .navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(32, 145, 162, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar .botao a {
+    color: #ffffff !important;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #304967 !important;
+
+}
+
+.navbar .botao a:hover {
+    color: #ffffff !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+    background: #304967 !important;
+
+}
+
+
+
+main #hero1 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(32, 145, 162, 0.6)),
+        url('../img/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+main #hero1 h1 {
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+main #hero1 p {
+    font-size: 28px;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* SECTION WHO ARE WE */
+
+section#who-are-we {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#who-are-we h2 {
+    font-size: 36px;
+    color: #304967;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+section#who-are-we p {
+    font-size: 20px;
+    color: #333;
+
+    margin: 0 auto;
+}
+
+/* Mission area */
+section#mission {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    transition: 0.5s !important;
+}
+
+section#mission .smission {
+
+    transition: 0.5s !important;
+}
+
+section#mission h5 {
+    font-size: 36px;
+    color: #304967;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+section#mission p {
+    font-size: 20px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#mission .linha {
+    width: 10%;
+    height: 10px;
+    background-color: #304967;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+section#mission .c-hover {
+    transform: scale(1.05) !important;
+    transition: transform 1.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: #304967;
+    color: #ffffff !important;
+    cursor: pointer;
+}
+
+section#mission .c-hover h5 {
+    color: #ffffff !important;
+}
+
+section#mission .c-hover p {
+    color: #ffffff !important;
+}
+
+/* SERVICES */
+section#services {
+    background-color: #fbfbfb;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('https://img.freepik.com/fotos-gratis/retrato-do-conceito-de-entrega-de-um-entregador-afro-americano-bonito-ou-correio-mostrando-tablet-em-voce-para-verificar-o-pedido-isolado-no-espaco-de-copia-de-fundo-do-estudio-cinza_1258-102512.jpg?t=st=1746895735~exp=1746899335~hmac=c0c7a3c860c758a4f09561b098b83a23ffd0b5dd6463e12a1571f1ea308c73a8&w=1380');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+section#services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(32, 145, 162, 0.6) 100%);
+    z-index: -1;
+}
+
+#services .card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#services h1,
+#services p {
+    color: #fff;
+}
+
+#services .card-title {
+    color: #304967;
+}
+
+#services .card-text {
+    color: #333;
+}
+
+/* Others */
+
+.custom-card {
+    background-color: #f1f1f1;
+    padding: 40px 20px 30px 20px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #304967;
+    border-top: #304967 20px solid;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f1f1 100%);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #304967;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon img {
+    width: 45px;
+    height: 45px;
+    filter: invert(1);
+}
+
+.card-separator {
+    width: 90%;
+    height: 10px;
+    background-color: #304967;
+    border: none;
+    margin: 20px auto;
+}
+
+.card-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #3b3b3b;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f1f1 100%);
+    border: 1px solid #304967;
+    border-top: #304967 20px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.benefits-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: #304967 2px solid;
+    padding-bottom: 20px;
+}
+
+.benefit-number {
+    font-size: 80px;
+    font-weight: bold;
+    color: #304967;
+    margin-right: 20px;
+    line-height: 1;
+}
+
+.benefit-text {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3b3b3b;
+    border-radius: 2px;
+    flex: 1;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .benefit-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefit-number {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* contact */
+/* Estilo geral da seção de contatos */
+#contact {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+/* Cartões de localização e formulário */
+.card {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Estilo do título da seção */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos links sociais */
+.social-links a {
+    margin-right: 10px;
+}
+
+.social-links a img {
+    width: 25px !important;
+    height: 25px !important;
+    transition: transform 0.3s;
+    display: block;
+    border-radius: 50px;
+    line-height: normal;
+}
+
+
+
+.social-links a img:hover {
+    transform: scale(1.2);
+}
+
+/* Formulário de contato */
+form .form-control {
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do mapa */
+.map-container iframe {
+    border-radius: 2px;
+    width: 100%;
+    height: 240px;
+}
+
+.call {
+    background: url(../img/call\ center.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 75vh;
+    padding: auto;
+    border-radius: 8px;
+}
